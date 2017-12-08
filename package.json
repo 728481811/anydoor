@@ -1,0 +1,46 @@
+{
+  "devDependencies": {
+    "chalk": "^2.3.0",
+    "pre-commit": "^1.2.2"
+  },
+  "name": "anydoor",
+  "version": "1.0.0",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "concat-stream": "^1.6.0",
+    "core-util-is": "^1.0.2",
+    "cross-spawn": "^5.1.0",
+    "inherits": "^2.0.3",
+    "isarray": "^1.0.0",
+    "isexe": "^2.0.0",
+    "lru-cache": "^4.1.1",
+    "os-shim": "^0.1.3",
+    "pre-commit": "^1.2.2",
+    "process-nextick-args": "^1.0.7",
+    "pseudomap": "^1.0.2",
+    "readable-stream": "^2.3.3",
+    "safe-buffer": "^5.1.1",
+    "shebang-command": "^1.2.0",
+    "shebang-regex": "^1.0.0",
+    "spawn-sync": "^1.0.15",
+    "string_decoder": "^1.0.3",
+    "typedarray": "^0.0.6",
+    "which": "^1.3.0",
+    "util-deprecate": "^1.0.2",
+    "yallist": "^2.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/728481811/anydoor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/728481811/anydoor/issues"
+  },
+  "homepage": "https://github.com/728481811/anydoor#readme",
+  "description": ""
+}
