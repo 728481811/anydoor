@@ -15,7 +15,7 @@ module.exports = async function (req,  res, filePath) {
 		if(stats.isFile()) {
 			const contentType = mime(filePath);
 			res.statusCode = 200;			
-			res.setHeader('Content-Type', contentType[1]);
+			res.setHeader('Content-Type', contentType[1] ? contentType[1] : 'text/plain;charset=utf-8');
 			fs.createReadStream(filePath).pipe(res);
 		} else if (stats.isDirectory()){
 			const files = await readdir(filePath);

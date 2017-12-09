@@ -9,7 +9,7 @@ const server =  http.createServer((req, res) => {
 	route(req, res, filePath);
 });
 
-server.listen(conf.port, conf.hostname, () => {
+server.listen(conf.port, () => {
 	const addr = `http://${conf.hostname}:${conf.port}`;
 	/* eslint-disable*/
     console.log(`server start at ${chalk.blue(addr)}`);
