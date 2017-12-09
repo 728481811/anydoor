@@ -6,8 +6,10 @@ const readdir = promisify(fs.readdir);
 const config = require('../config/defaultConfig');
 const handlebars = require('handlebars');
 const tplPath = path.join(__dirname, '../template/dir.html');
+const tplErr = path.join(__dirname, '../template/err.html');
 const source = fs.readFileSync(tplPath);
-const template = handlebars.compile(source.toString());;
+const source1 = fs.readFileSync(tplErr);
+const template = handlebars.compile(source.toString());
 const mime = require('../helper/mime');
 module.exports = async function (req,  res, filePath) {
     try {
@@ -43,7 +45,7 @@ module.exports = async function (req,  res, filePath) {
         }
 	} catch(err) {
 		res.statusCode = 404;
-		res.setHeader('Content-Type', 'text/plain');
-		res.end(`${filePath} is not a directory or file ${err}`);
+		res.setHeader('Content-Type', 'text/html');
+		res.end(source1);
 	}
 };
